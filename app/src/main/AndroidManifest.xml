@@ -25,7 +25,7 @@
             android:label="@string/title_activity_scrolling"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".CoordinatorLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/SecondAppTheme"></activity>
     </application>
 
 </manifest>

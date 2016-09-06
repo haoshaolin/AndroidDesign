@@ -6,4 +6,7 @@
 
     <color name="expanded_title">#ff9800</color>
     <color name="collapsed_title">#9c27b0</color>
+
+    <color name="second_Primary">#ff6e40</color>
+    <color name="second_PrimaryDark">#ff5722</color>
 </resources>

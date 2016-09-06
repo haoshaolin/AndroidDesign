@@ -24,7 +24,7 @@
             app:titleEnabled="false"
             app:expandedTitleGravity="center_horizontal"
             app:collapsedTitleGravity="left"
-            app:contentScrim="@color/colorPrimary"
+            app:contentScrim="@color/second_Primary"
             app:expandedTitleMarginStart="48dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
@@ -74,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#ff9999"
+        android:id="@+id/scrollView"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <WebView
@@ -86,7 +87,9 @@
         android:id="@+id/fab"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
+        app:layout_behavior="com.soros.design.ScrollingFABBehavior"
+        app:layout_anchor="@id/scrollView"
+        app:layout_anchorGravity="bottom|end"
         android:src="@drawable/ic_menu_camera" />
 </android.support.design.widget.CoordinatorLayout>
